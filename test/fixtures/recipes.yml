@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image_url: MyString
+  user_id: MyString
+  category_id: MyString
+  cook_time: MyString
+  prep_time: MyString
+  total_time: MyString
+  calories_per_serving: 1
+  ingredient_id: 1
+  comment_id: 1
+  ingredients: MyString
+  instructions: MyString
+  rating: 9.99
+  source: MyString
+  likes: 1
+  gluten_free: false
+  paleo: false
+  vegetarian: false
+  vegan: false
+  saved_by: 1
+
+two:
+  name: MyString
+  image_url: MyString
+  user_id: MyString
+  category_id: MyString
+  cook_time: MyString
+  prep_time: MyString
+  total_time: MyString
+  calories_per_serving: 1
+  ingredient_id: 1
+  comment_id: 1
+  ingredients: MyString
+  instructions: MyString
+  rating: 9.99
+  source: MyString
+  likes: 1
+  gluten_free: false
+  paleo: false
+  vegetarian: false
+  vegan: false
+  saved_by: 1

@@ -12,11 +12,12 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_digest
 
       #for inside profile information
-      t.string :my_fridge
+      t.integer :recipe_id #recipe id of your entered recipe ie myrecipes
+      t.integer :ingredient_id #1 to many
+      t.string :my_fridge #name of fridge
       t.string :profile_image_url, default: "http://chefmixer.com/Content/images/DefaultChefProfile.png"
       t.boolean :super_chef
-      t.string :liked_recipes #recipe id of grabbed recipe
-      t.integer :my_recipes #recipe id of your entered recipe
+      t.integer :liked_recipes #recipe id of grabbed recipe
       t.index(:email, unique: true)
       t.index(:handle, unique: true) #both are unique
 

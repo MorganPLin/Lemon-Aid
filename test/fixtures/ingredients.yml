@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ingredient_image_url: MyString
+  expiration: 1
+  category_id: 1
+  quantity: MyString
+
+two:
+  name: MyString
+  ingredient_image_url: MyString
+  expiration: 1
+  category_id: 1
+  quantity: MyString
