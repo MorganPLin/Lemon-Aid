@@ -9,36 +9,36 @@ User.delete_all
 
 user = User.create ([ {first_name: "Kanyee",
                        last_name: "Talot",
-                       handle: "uknowit",
+                       handle: "N_uknowit",
                        email: "Foodie@greatfoods.com",
                        password: "123",
                        password_confirmation: "123",
                        recipe_id: 1,
                        my_fridge: "The Vault",
-                       profile_image_url: "",
-                       super_chef: false
+                       profile_image_url: "http://www.slate.com/content/dam/slate/blogs/xx_factor/2014/doughnut.jpg.CROP.promo-mediumlarge.jpg",
+                       super_chef: true
                       },
 
-                      {first_name: "",
-                       last_name: "",
-                       handle: "",
-                       email: "",
+                      {first_name: "Mickey",
+                       last_name: "Mouse",
+                       handle: "cheeseplease22",
+                       email: "themouse@disney.com",
                        password: "123",
                        password_confirmation: "123",
-                       my_fridge: "The Vault",
-                       profile_image_url: "",
-                       super_chef: false
+                       my_fridge: "Mickey's Fridge",
+                       profile_image_url: "http://img.lum.dolimg.com/v1/images/open-uri20150422-20810-e6k8tr_d1dd2596.png",
+                       super_chef: true
                       },
 
-                      {first_name: "",
-                       last_name: "",
-                       handle: "",
-                       email: "",
-                       password: "",
-                       password_confirmation: "",
-                       my_fridge: "",
-                       profile_image_url: "",
-                       super_chef: true
+                      {first_name: "Liz",
+                       last_name: "Lemon",
+                       handle: "liz_lemonxpizza",
+                       email: "1pushupayear@gmail.com",
+                       password: "123",
+                       password_confirmation: "123",
+                       my_fridge: "No Vegetables Allowed",
+                       profile_image_url: "http://cdn1.theodysseyonline.com/files/2015/11/13/635829908730227381-1996171562_liz-lemon.png",
+                       super_chef: false
                       }
 
                      ])
@@ -360,3 +360,104 @@ ingredient = Ingredient.create ([ {name: "chicken", #1
 
                                 ])
 
+recipe = Recipe.create ([ {name: "Ramen Burger", #1
+                           image_url: "http://images.media-allrecipes.com/userphotos/250x250/1038666.jpg",
+                           user_id: 1,
+                           total_time: "20 min",
+                           calories_per_serving: 673,
+                           ingredients: "2 (3 ounce) packages instant ramen noodles
+                                        \nflavor packet discarded
+                                        \n2 large eggs
+                                        \nsalt and ground black pepper to taste
+                                        \n3/4 pound lean ground beef
+                                        \n1 tablespoon soy sauce
+                                        \n1 teaspoon sesame oil
+                                        \n3 tablespoons vegetable oil, divided
+                                        \n3 slices American cheese
+                                        \n1/4 cup ketchup
+                                        \n2 tablespoons chile-garlic sauce (such as Sriracha)
+                                        \n1 1/2 cups arugula
+                                        \n3 large eggs",
+                           instructions:   "1)Bring a pot of  water to a boil; add ramen noodles.
+                                            about 3 minutes. Drain. Allow noodles to cool slightly.
+                                          \n2)Beat 2 eggs in a bowl; season with salt and pepper. Stir noodles into eggs until evenly coated. Divide noodles into 6 burger-size ramekins or bowls. Place a sheet of plastic wrap directly over noodles and stack another bowl on top to flatten noodles. Refrigerate until firm, about 20 minutes.
+                                          \n3)Mix beef, soy sauce, and sesame oil in a bowl. Divide beef mixture into three equal portions and shape into patties.
+                                          \n4)Heat about 1 tablespoon vegetable oil in a large skillet over medium-high heat. Invert each ramen bowl, gently tapping the bottom of the bowl until ramen loosens, careful to maintain bun shape.
+                                          \n5)Fry each ramen bun, without moving noodles, in hot oil until golden brown, about 3 minutes. Flip each bun and continue frying until crisp, 3 to 5 minutes more. Ramen bun should be crispy on one side and slightly softer on the other. Transfer buns to large plate with the crispy side up.
+                                          \n6)Heat about 1 tablespoon vegetable oil in the same skillet used to fry ramen over medium heat. Cook beef patties until burgers are lightly pink in the center, 3 to 5 minute per side. An instant-read thermometer inserted into the center should read 140 degrees F (60 degrees C). Arrange a slice of American cheese over each burger and continue to cook until melted, about 1 minute more.
+                                          \n7)Mix ketchup and chile-garlic sauce in a small bowl; spread mixture over the crispy side of each ramen bun. Divide arugula over 3 ramen buns. Place burgers over arugula.
+                                          \n8)Heat about 1 teaspoon oil in a small skillet over medium-high heat; fry remaining eggs one at a time, adding more oil as needed, until yolk is almost firm, about 1 minutes per side. Place egg over patty and top with remaining bun.",
+                           rating: 0,
+                           source: "http://allrecipes.com/recipe/234111/ramen-burger/print/?recipeType=Recipe&servings=3",
+                           likes: 0,
+                           gluten_free: false,
+                           paleo: false,
+                           vegetarian: false,
+                           vegan: false},
+
+                          {name: "Cheese Omelette", #2
+                           image_url: "http://cdn-image.myrecipes.com/sites/default/files/styles/300x300/public/image/recipes/su/05/04/cheese-omelet-su-1036263-x.jpg?itok=-WRlIakr",
+                           user_id: 2,
+                           total_time: "5 minutes",
+                           calories_per_serving: 520,
+                           ingredients: "3 large eggs
+                                       \n1 tablespoon whipping cream or milk
+                                       \n1/8 teaspoon salt
+                                       \n1 tablespoon butter
+                                       \n1/3 cup shredded cheddar or Swiss cheese",
+                           instructions:  "1) In a bowl, whisk eggs, cream, and salt just until
+                                           blended; do not overbeat.
+                                         \n2) Heat an 8-inch nonstick frying pan with sloping sides over medium-high heat for 1 minute. When hot, add butter and tilt pan to coat evenly. When butter is foamy, pour egg mixture into pan and swirl to spread it out to edges of pan.
+                                         \n3) As the egg mixture begins to set on the bottom, lift one edge with a heatproof flexible spatula and tilt the pan to let the uncooked mixture on top flow underneath. Continue lifting edges of omelet and tilting pan, working your way around all sides, until no more uncooked egg mixture will flow underneath and the top is just a little moist, about 2 minutes total.
+                                         \n4) Sprinkle cheese either in a strip down the middle, if you plan on folding the omelet into thirds, or over one half, if you're folding it in half. Loosen the omelet with the spatula. For a third-fold, fold one edge over strip of cheese in the middle; tip pan to slide omelet, folded edge first, onto a warm plate, flipping remaining edge over filling as omelet leaves pan. For a half-fold, tip pan to slide omelet, cheese side first, onto warm plate; flip bare half over cheese as omelet leaves pan.
+                                           Folding a plain cheese omelet:
+                                         \n5)As egg mixture sets on pan bottom, lift edge with a spatula and tilt pan to let uncooked egg flow underneath. Continue the process, working around pan sides, until no uncooked egg mixture flows underneath and top is still moist.
+                                         \n6)Sprinkle cheese in a strip down the center of the omelet, in line with the pan handle. With the spatula, fold one side over the strip of cheese.
+                                         \n7)Run spatula under omelet to loosen, and tip pan to slide omelet, folded edge first, onto a warm plate. Flip remaining edge over filling as omelet leaves pan.",
+                           rating: 0,
+                           source: "http://www.myrecipes.com/recipe/folded-cheese-omelet",
+                           likes: 0,
+                           gluten_free: true,
+                           paleo: true,
+                           vegetarian: true,
+                           vegan: false},
+
+                          {name: "Ramen with Eggs", #4
+                           image_url: "http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2718.jpg",
+                           user_id: 1,
+                           total_time: "30 min",
+                           calories_per_serving: 450,
+                           ingredients: "1 package ramen \n1 egg \nchives (optional)",
+                           instructions: "1)Follow the directions for regular Ramen. Bring water to a boil, add noodles and turn down heat. \n2)Now here comes the fun part. Beat an egg with a fork in a seperate bowl. \n3)As the noodles are cooking Slowly pour the egg into the mix like you would if you were making regular egg drop. \n4)Stir it up.",
+                           rating: 0,
+                           likes: 0,
+                           gluten_free: false,
+                           paleo: false,
+                           vegetarian: true,
+                           vegan: false},
+
+                          {name: "Cheese Fondue", #5
+                           image_url: "http://assets.epicurious.com/photos/560de51ef9a84192308a7a9d/master/pass/231492.jpg",
+                           user_id: 2,
+                           cook_time: "",
+                           prep_time: "",
+                           total_time: "25 min",
+                           calories_per_serving: 247,
+                           ingredients: "1 garlic clove, 1 1/2 cups milk, 1 tablespoon cornstarch, 2 teaspoons kirsch (optional), 1 pound or 2 cups cheese",
+                           instructions:
+                                        "1) Rub inside of a 4-quart heavy pot with cut sides of garlic, then discard garlic. Add wine to pot and bring just to a simmer over moderate heat.
+                                       \n2) Stir together cornstarch and kirsch (if using; otherwise, use water or wine) in a cup.
+                                       \n3) Gradually add cheese to pot and cook, stirring constantly in a zigzag pattern (not a circular motion) to prevent cheese from balling up, until cheese is just melted and creamy (do not let boil). Stir cornstarch mixture again and stir into fondue. Bring fondue to a simmer and cook, stirring, until thickened, 5 to 8 minutes. Transfer to fondue pot set over a flame.",
+                           rating: 0,
+                           likes: 0,
+                           gluten_free: true,
+                           paleo: false,
+                           vegetarian: true,
+                           vegan: false},
+
+                        ])
+
+comment = Comment.create [{rating: 4,
+                           recommended: true,
+                           user_id: 1,
+                           recipe_id: 1}]

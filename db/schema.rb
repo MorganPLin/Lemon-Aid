@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20160106034423) do
   end
 
   create_table "comments", force: :cascade do |t|
+    t.string   "comment"
     t.integer  "rating",      default: 0
     t.boolean  "recommended"
     t.integer  "user_id"
