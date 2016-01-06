@@ -13,7 +13,6 @@ user = User.create ([ {first_name: "Kanyee",
                        email: "Foodie@greatfoods.com",
                        password: "123",
                        password_confirmation: "123",
-                       recipe_id: 1,
                        my_fridge: "The Vault",
                        profile_image_url: "http://www.slate.com/content/dam/slate/blogs/xx_factor/2014/doughnut.jpg.CROP.promo-mediumlarge.jpg",
                        super_chef: true
