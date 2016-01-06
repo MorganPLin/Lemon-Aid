@@ -1,4 +1,22 @@
 Rails.application.routes.draw do
+  get 'recipes/index'
+
+  get 'recipes/show'
+
+  get 'recipes/edit'
+
+  get 'recipes/new'
+
+  get 'recipes/destroy'
+
+  get 'ingredients/index'
+
+  get 'ingredients/show'
+
+  get 'ingredients/new'
+
+  get 'ingredients/destroy'
+
   root 'users#index', as: :users
 
   get 'users/new' => 'users#new', as: :new_user
