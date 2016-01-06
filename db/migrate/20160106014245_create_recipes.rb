@@ -11,8 +11,8 @@ class CreateRecipes < ActiveRecord::Migration
       t.integer :calories_per_serving
       t.integer :ingredient_id
       t.integer :comment_id
-      t.string :ingredients
-      t.string :instructions
+      t.text :list_ingredients
+      t.text :instructions
       t.decimal :rating, precision: 1, scale: 1, default: 0
       t.string :source
       t.integer :likes, default: 0

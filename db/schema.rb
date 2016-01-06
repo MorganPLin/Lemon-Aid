@@ -29,13 +29,13 @@ ActiveRecord::Schema.define(version: 20160106034423) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string   "comment"
-    t.integer  "rating",      default: 0
+    t.text     "comment_text"
+    t.integer  "rating",       default: 0
     t.boolean  "recommended"
     t.integer  "user_id"
     t.integer  "recipe_id"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "comments_recipes", id: false, force: :cascade do |t|
@@ -79,8 +79,8 @@ ActiveRecord::Schema.define(version: 20160106034423) do
     t.integer  "calories_per_serving"
     t.integer  "ingredient_id"
     t.integer  "comment_id"
-    t.string   "ingredients"
-    t.string   "instructions"
+    t.text     "list_ingredients"
+    t.text     "instructions"
     t.decimal  "rating",               precision: 1, scale: 1, default: 0.0
     t.string   "source"
     t.integer  "likes",                                        default: 0
