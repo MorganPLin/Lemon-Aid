@@ -14,17 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-<pre id="spoonacular-ingredients" style="display:none">
-almonds
-apples
-
-</pre>
-<div id="spoonacular-ingredient-visualizer"></div>
-<script type="text/javascript">
- var spoonacularServings = 1;
- var spoonacularMeasure = 'us';
- var spoonacularView = 'grid';
-</script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="https://spoonacular.com/cdn/spoonacular-1.5.min.js"></script>

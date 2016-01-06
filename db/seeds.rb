@@ -457,7 +457,6 @@ recipe4.ingredients << recipe4_ingredients
 
 #Populate User Fridge with Ingredients
 
-
 user1 = User.find(1) #Kanyee Talot
 user1_fridge = Ingredient.find(32, 29, 33, 12, 21, 51, 52, 53)
 user1.ingredients << user1_fridge
@@ -469,9 +468,6 @@ user2.ingredients << user2_fridge
 user3 = User.find(2) #Liz
 user3_fridge = Ingredient.find(32, 33, 34, 2, 37, 35, 11, 19, 25, 14, 30, 38, 40, 47)
 user3.ingredients << user3_fridge
-
-
-
 
 
 
