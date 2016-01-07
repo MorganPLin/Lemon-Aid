@@ -14,6 +14,7 @@
  *= require_self
  */
 
+
 h3 {
   color: maroon;
   text-align: center;
@@ -28,13 +29,21 @@ body {
 
 .fridge {
   height: 450px;
-  width: 30%;
-  border: 1px solid maroon;
-  font-size: 8px;
+  width: 250px;
+  border: 1px solid red;
+  font-size: 10px;
   float: left;
   background-image: url("/assets/red_refrigerator_empty.jpg");
+  background-size: 248px 449px;
   border-radius: 9px;
-  background-repeat:no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  left: 200px;
+  position: absolute;
+
+}
+
+/*  background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -42,10 +51,6 @@ body {
   background-position:center;
 /*  display: -webkit-flex;*/
 /*  -webkit-flex-wrap: wrap;*/
-  display: flex;
-  flex-wrap: wrap;
-
-}
 
 .recipeContainer {
   display: -webkit-flex;
@@ -132,5 +137,4 @@ body {
 }
 
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
+
