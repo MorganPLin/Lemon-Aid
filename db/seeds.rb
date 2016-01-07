@@ -14,7 +14,7 @@ user = User.create ([ {first_name: "Kanyee",
                        password: "123",
                        password_confirmation: "123",
                        my_fridge: "The Vault",
-                       profile_image_url: "http://www.slate.com/content/dam/slate/blogs/xx_factor/2014/doughnut.jpg.CROP.promo-mediumlarge.jpg",
+                       profile_image_url: "http://i2.kym-cdn.com/photos/images/facebook/000/030/404/1260585284155.png",
                        super_chef: true
                       },
 
@@ -460,11 +460,11 @@ user1 = User.find(1) #Kanyee Talot
 user1_fridge = Ingredient.find(32, 29, 33, 12, 21, 51, 52, 53)
 user1.ingredients << user1_fridge
 
-user2 = User.find(1) #Mickey Mouse
+user2 = User.find(2) #Mickey Mouse
 user2_fridge = Ingredient.find(22, 20, 21, 19, 23, 24)
 user2.ingredients << user2_fridge
 
-user3 = User.find(2) #Liz
+user3 = User.find(3) #Liz
 user3_fridge = Ingredient.find(32, 33, 34, 2, 37, 35, 11, 19, 25, 14, 30, 38, 40, 47)
 user3.ingredients << user3_fridge
 

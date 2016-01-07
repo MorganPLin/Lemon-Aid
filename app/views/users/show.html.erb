@@ -1,7 +1,22 @@
+<%= render "navigation_logged_in" %>
 <h1>Welcome <%= @user.first_name %>!</h1>
 <br>
 
-<div>
+ <h2>MY FRIDGE</h2>
+<div class="fridge">
+
+
+
+      <% @user.ingredients.each do |ingredient| %>
+
+        <%= image_tag ingredient.ingredient_image_url, :class=>
+        "fridgeIngredients" %>
+        <div class = "ingredientLabel">
+          <%= ingredient.name %>
+        </div>
+
+      <% end %>
+
 
 </div>
 

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'recipes/index'
+  get 'users/:id/recipes/index' => "users#comment", as: :all_recipes
 
   get 'recipes/show'
 
