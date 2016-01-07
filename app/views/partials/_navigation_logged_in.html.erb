@@ -7,9 +7,8 @@
   </header>
 
 <ul>
-  <li><%= link_to "MY FRIDGE", user_path, :method => :get, :class => "navBar"%></li>
-  <li><%= link_to "ALL RECIPES", all_recipes_path, :method => :get, :class => "navBar"%></li>
-  <li><%= link_to "INGREDIENTS INDEX", all_ingredients_path, :method => :get, :class => "navBar" %></li>
+  <li><%= link_to "MY FRIDGE", all_ingredients_path, :method => :get, :class => "navBar" %></li>
+  <li><%= link_to "SEARCH RECIPES", all_recipes_path, :method => :get, :class => "navBar"%></li>
   <li><%= link_to "MY RECIPES", my_recipes_path, :method => :get, :class => "navBar" %>
   </li>
   <li><%= link_to "LOG OUT", destroy_session_path, :class => "navBar" %></li>

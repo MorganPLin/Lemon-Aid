@@ -10,7 +10,10 @@ class IngredientsController < ApplicationController
       ingredient_list = Ingredient.all
       @ingredients = []
       ingredient_list.each do |ingredient|
-        if ingredient[search_by].downcase.include? params[:query].downcase
+        if ingredient.name.downcase.include? params[:query].downcase
+          @ingredients << ingredient
+        end
+        if ingredient.category.name.downcase.include? params[:query].downcase
           @ingredients << ingredient
         end
       end

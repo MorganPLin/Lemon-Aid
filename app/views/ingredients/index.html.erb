@@ -2,8 +2,25 @@
 <header>
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 </header>
+<!-- FRIDGE -->
+<div class = "editFridgeContainer">
+<h3><%= @user.my_fridge.upcase%></h3>
+  <div class="fridge">
 
+      <% @user.ingredients.each do |ingredient| %>
+      <div class = "fridgeIngredients">
+        <%= image_tag ingredient.ingredient_image_url, :class=>
+        "fridgeIngredientImage" %></br>
+        <div class = "ingredientLabel">
+          <%= ingredient.name %></br>
+        </div>
+      </div>
 
+      <% end %>
+  </div>
+</div>
+
+<div class= "searchBar">
 <!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
   <%= form_tag(all_ingredients_path, method: :get) do %>
     Search ingredient by
@@ -16,6 +33,7 @@
     <%= paginate @ingredients %>
   <% end %>
 <!-- SHOW INGREDIENTS -->
+<div class= "ingredients">
 <% @ingredients.each do |ingredient| %>
 
   <div class = "ingredientBox">
@@ -27,6 +45,6 @@
     <button class="addIngredientToFridge"><%= link_to "ADD TO FRIDGE", add_ingredient_path(@user.id, ingredient.id), method: :get %> </button>
   </div>
 <% end %>
-
+</div>
 
 
