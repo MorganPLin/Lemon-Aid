@@ -1,11 +1,30 @@
 <%= render :partial => "partials/navigation_logged_in" %>
+<header>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+</header>
+
+
+<!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
+  <%= form_tag(all_ingredients_path, method: :get) do %>
+    Search ingredient by
+    <%= select_tag "search", options_for_select(["name", "category"]) %>
+    <%= text_field_tag :query %>
+    <%= submit_tag "Search Ingredients", "class" => "btn btn-primary"%>
+  <% end %>
+
+  <% if @paginate %>
+    <%= paginate @ingredients %>
+  <% end %>
+<!-- SHOW INGREDIENTS -->
 <% @ingredients.each do |ingredient| %>
 
   <div class = "ingredientBox">
     <span class = "ingredientTitle"><%= ingredient.name.upcase %></span></br>
     <%= image_tag ingredient.ingredient_image_url, :class => "ingredientImage" %></br>
     LASTS FOR: <%= ingredient.expiration %> days </br>
-    Tag Name<%= ingredient %> </br>
+    Tag Name<%= ingredient.expiration %> </br>
+    <%= ingredient.category.name %>
+    <button class="addIngredientToFridge"><%= link_to "ADD TO FRIDGE", add_ingredient_path(@user.id, ingredient.id), method: :get %> </button>
   </div>
 <% end %>
 

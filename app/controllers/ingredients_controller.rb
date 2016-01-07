@@ -1,9 +1,23 @@
 class IngredientsController < ApplicationController
   def index
-      @users = User.all
+
       @ingredients = Ingredient.all
-      @recipes = Recipe.all
       @user = User.find(params[:id])
+
+      # SEARCH BAR
+      if params[:query]
+      search_by = params[:search].to_sym
+      ingredient_list = Ingredient.all
+      @ingredients = []
+      ingredient_list.each do |ingredient|
+        if ingredient[search_by].downcase.include? params[:query].downcase
+          @ingredients << ingredient
+        end
+      end
+      return @ingredients
+    end
+    @paginate = true
+    @ingredients = Ingredient.page(params[:page]).per(5)
   end
 
   def show

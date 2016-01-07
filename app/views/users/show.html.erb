@@ -1,14 +1,18 @@
 <%= render :partial => "partials/navigation_logged_in" %>
+
+<div class = "editFridgeContainer">
 <h3><%= @user.my_fridge.upcase%></h3>
   <div class="fridge">
 
       <% @user.ingredients.each do |ingredient| %>
-
+      <div class = "fridgeIngredients">
         <%= image_tag ingredient.ingredient_image_url, :class=>
-        "fridgeIngredients" %>
+        "fridgeIngredientImage" %></br>
         <div class = "ingredientLabel">
-          <%= ingredient.name %>
+          <%= ingredient.name %></br>
         </div>
+      </div>
 
       <% end %>
   </div>
+</div>

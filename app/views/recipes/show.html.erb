@@ -1,6 +1,7 @@
 <%= render :partial => "partials/navigation_logged_in" %>
-
-<%= @user.recipes.each do |recipe| %>
+<div id = "recipeContainer">
+<% @user.recipes.each do |recipe| %>
 <%= recipe.name %></br>
 <%= image_tag recipe.image_url, :class => "myRecipesImage" %></br>
 <% end %>
+</div>

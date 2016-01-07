@@ -32,6 +32,13 @@ class UsersController < ApplicationController
     @recipes = Recipe.all
   end
 
+  def add_ingredient
+    ingredient = Ingredient.find(params[:ingredient_id])
+    IngredientsUser.create({user_id: params[:id], ingredient_id: ingredient.id})
+    flash[:success] = ingredient.name + 'added to your refridgerator'
+    redirect_to :back
+  end
+
 
 private
 

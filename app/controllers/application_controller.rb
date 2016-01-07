@@ -10,7 +10,8 @@ protected
   #this is the @user part. The || says: OR if the @user doesn't exist, assign the result of User.find...
   #to @user, BUT, only attempt the User.find if there is a :user_id stored in the session.
   def current_user
-    @current_user ||= User.find session[:user_id]  if session[:user_id]
+    return unless session[:user_id]
+    @current_user ||= User.find(session[:user_id])
   end
 
 end
