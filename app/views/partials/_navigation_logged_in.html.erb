@@ -1,0 +1,20 @@
+<html>
+  <header>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag "assets/stylesheets/header" %>
+  </header>
+
+<ul>
+  <li><%= link_to "ALL RECIPES", all_recipes_path, :method => :get, :class => "navBar"%></li>
+  <li><%= link_to "INGREDIENTS INDEX", all_ingredients_path, :method => :get, :class => "navBar" %></li>
+  <li><%= link_to "MY RECIPES", my_recipes_path, :method => :get, :class => "navBar" %>
+  </li>
+  <li><%= link_to "LOG OUT", destroy_session_path, :class => "navBar" %></li>
+  <li><%= image_tag @user.profile_image_url, :id => "profilePic" %></li>
+  <h2>Welcome <%= @user.first_name %>!</h2>
+</ul>
+
+
+

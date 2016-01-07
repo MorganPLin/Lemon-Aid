@@ -32,6 +32,7 @@ class UsersController < ApplicationController
     @recipes = Recipe.all
   end
 
+
 private
 
   def user_params

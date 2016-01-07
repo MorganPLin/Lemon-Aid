@@ -1,4 +1,21 @@
-<%= render "navigation_logged_in" %>
+<%= render :partial => "partials/navigation_logged_in" %>
+<div class = "recipeContainer">
 <% @recipes.each do |recipe| %>
-  <%= recipe.name %>
+  <div class= "recipeBox">
+    <div class = "recipeShow">
+      <%= recipe.name.upcase %>
+      <%= image_tag recipe.image_url, :class => "recipeImage" %></br>
+      <span class = "recipeCreator">CREATED BY: <%= recipe.user.handle %></span></br>
+        <%= recipe.cook_time %> </br>
+      <div class = "firstComment">
+      <% if recipe.comments.first %>
+         "<%= recipe.comments.first.comment_text %>!"
+      <% elsif !recipe.comments.first %>
+         no Reviews yet </br>
+      <div id = "recipeLink">  <%= link_to "REVIEW ME" %> </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
 <% end %>
+</div>

@@ -22,9 +22,61 @@ body {
 
 .fridge {
   height: 450px;
-  width: 300px;
+  width: 30%;
   border: 1px solid black;
   font-size: 10px;
+  float: left;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipeContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.recipeImage {
+  max-height: 100px;
+  width: 100px;
+  border-radius: 3px;
+}
+
+.container {
+  height: 100%;
+  width: 600px;
+}
+
+.recipeBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+}
+
+/*black portion of photo */
+.recipeShow {
+  height: 214px;
+  width: 172px;
+  margin: 18px 0px 0px 0px;
+  text-align: -webkit-center;
+}
+/*comment at bottom of Recipe on AllRecipes*/
+.firstComment {
+  color: red;
+  font-family: 'Coming Soon', cursive;
+  font-size: 10px;
+  height: 30px;
+  width: 100px;
+  border: 1px solid black;
+  margin-top: 80px;
 }
 
 .fridgeIngredients {
@@ -33,6 +85,7 @@ body {
   background-color: white;
   border: 2px solid black;
   display: flex;
+  font-color: navy;
 }
 
 #profilePic {
@@ -43,6 +96,7 @@ body {
     border: 1px solid black;
     background-color: white;
 }
+
 
 @import "bootstrap-sprockets"
 @import "bootstrap"

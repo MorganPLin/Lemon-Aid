@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'users/:id/recipes/index' => "users#comment", as: :all_recipes
 
+  get 'users/:id/ingredients/index' => "ingredients#index", as: :all_ingredients
+
+  get 'users/:id/myrecipes' => "recipes#show", as: :my_recipes
+
   get 'recipes/show'
 
   get 'recipes/edit'

@@ -1,11 +1,6 @@
-<%= render "navigation_logged_in" %>
-<h1>Welcome <%= @user.first_name %>!</h1>
-<br>
-
- <h2>MY FRIDGE</h2>
-<div class="fridge">
-
-
+<%= render :partial => "partials/navigation_logged_in" %>
+<h3><%= @user.my_fridge.upcase%></h3>
+  <div class="fridge">
 
       <% @user.ingredients.each do |ingredient| %>
 
@@ -16,7 +11,4 @@
         </div>
 
       <% end %>
-
-
-</div>
-
+  </div>

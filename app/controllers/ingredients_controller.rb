@@ -1,14 +1,12 @@
-class RecipesController < ApplicationController
+class IngredientsController < ApplicationController
   def index
       @users = User.all
+      @ingredients = Ingredient.all
       @recipes = Recipe.all
       @user = User.find(params[:id])
   end
 
   def show
-      @users = User.all
-      @recipes = Recipe.all
-      @user = User.find(params[:id])
   end
 
   def edit
