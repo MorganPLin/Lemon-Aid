@@ -1,3 +1,9 @@
+#navWelcomeLogo {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+}
+
 ul {
   list-style-type: none;
   font-family: 'Poiret One', cursive;

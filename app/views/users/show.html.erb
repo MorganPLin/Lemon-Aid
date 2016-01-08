@@ -1,5 +1,6 @@
 <%= render :partial => "partials/navigation_logged_in" %>
 
+<h3>RECIPE INFORMATION </h3>
 <div class = "editFridgeContainer">
 <h3><%= @user.my_fridge.upcase%></h3>
   <div class="fridge">
@@ -14,5 +15,33 @@
       </div>
 
       <% end %>
+  </div>
+</div>
+
+<!-- <div class = "myProfile">
+  <h5>WELCOME TO LEMON-AID!</h5>
+  <%= @user.handle%>'s Profile Page</br>
+  FIRST NAME: <%= @user.first_name%></br>
+  LAST NAME: <%= @user.last_name%></br>
+  email: <%= @user.email%>
+
+
+</div>
+
+ -->
+ <!-- SHOW RECIPE CARD -->
+ <div class = "myRecipeCardContainer">
+  <div class = "recipeCard">
+      <%= image_tag @recipe.image_url, :class => "recipeCardPicture" %>
+    <div class = "recipeCardText">
+      <%= @recipe.name.upcase %>
+      COOK TIME:<%= @recipe.total_time %>
+      CALORIES PER SERVING: <%= @recipe.calories_per_serving %>
+      INGREDIENTS:</br>
+      <%= @recipe.list_ingredients %>
+      INSTRUCTIONS: </br>
+      <%= @recipe.instructions %>
+<!--       <div class = "icon"></div> -->
+    </div>
   </div>
 </div>

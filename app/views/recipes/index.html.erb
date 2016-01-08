@@ -25,7 +25,7 @@
 <% @user.recipes.each do |recipe| %>
   <div class= "recipeBox">
     <div class = "recipeShow">
-      <%= link_to recipe.name.upcase, my_recipe_path(@user.id), method: :get %>
+      <%= link_to recipe.name.upcase, my_recipe_path(@user.id, recipe.id), method: :get %>
       <%= image_tag recipe.image_url, :class => "recipeImage" %></br>
       <span class = "myRecipeQuickInfo">COOKED IN: </span>
         <%= recipe.total_time %> </br>

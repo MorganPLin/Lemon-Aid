@@ -24,7 +24,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @recipes = Recipe.all
     @user = User.find(params[:id])
+    @recipe = Recipe.find(params[:recipe_id])
   end
 
   def fridgeSearch#buttonclicked

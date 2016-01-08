@@ -13,9 +13,36 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
+#welcomeLogo {
+  height: 177px;
+  position: absolute;
+  margin: auto;
+  padding: 130px 0px 0px 328px;
+}
+
+a {
+  color: grey;
+}
+
+.myProfile {
+  height: 100%;
+  width: 582px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 343px;
+  padding-left:19px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+h5 {
+  font-size: 40px;
+}
 #tack {
   height: 20px;
   width: 20px;

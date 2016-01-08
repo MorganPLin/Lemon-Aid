@@ -41,7 +41,7 @@
 <% @recipes.each do |recipe| %>
   <div class= "recipeBox">
     <div class = "recipeShow">
-      <%= recipe.name.upcase %>
+      <%= link_to recipe.name.upcase, recipe_path(@user.id, recipe.id), method: :get %>
       <%= image_tag recipe.image_url, :class => "recipeImage" %></br>
       <span class = "myRecipeQuickInfoName">BY: <%= recipe.user.handle %></span></br>
       <span class = "myRecipeQuickInfo">COOKED IN: </span>

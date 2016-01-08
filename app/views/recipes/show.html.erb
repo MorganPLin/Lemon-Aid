@@ -17,24 +17,25 @@
     </div>
 
     </div>
-  <button class="addNewRecipe"><%= link_to "+ ADD NEW RECIPE", new_recipe_path(@user.id), method: :get %> </button>
+  <button class="addNewRecipe"><%= link_to "DELETE RECIPE", my_recipes_path, method: :delete %> </button>
   </div>
 </div>
 
-<div class = "myRecipeContainer">
+    <div class = "recipeCardText">
+      <%= @recipe.name.upcase %></br>
+      COOK TIME:<%= @recipe.total_time %></br>
+      CALORIES PER SERVING: <%= @recipe.calories_per_serving %>
+      <div class = "ingredientText">
+         INGREDIENTS:</br> <%= @recipe.list_ingredients %>
+      </div>
+    </div>
+
+<div class = "myRecipeCardContainer">
   <div class = "recipeCard">
       <%= image_tag @recipe.image_url, :class => "recipeCardPicture" %>
-    <div class = "recipeCardText">
-      <%= @recipe.name.upcase %>
-      COOK TIME:<%= @recipe.total_time %>
-      CALORIES PER SERVING: <%= @recipe.calories_per_serving %>
-      INGREDIENTS:</br>
-      <%= @recipe.list_ingredients %>
       INSTRUCTIONS: </br>
       <%= @recipe.instructions %>
 <!--       <div class = "icon"></div> -->
-
-    </div>
   </div>
 </div>
 

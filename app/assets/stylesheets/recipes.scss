@@ -1,6 +1,56 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.recipeCardPicture {
+  margin: 20px;
+  border-radius: 10px;
+  height: 267px;
+  width: 267px;
+}
+.myRecipeCardContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 582px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 343px;
+  padding-left:19px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  font-size: 6px;
+}
+.recipeCardText {
+  height: 300px;
+  width: 200px;
+  font-size: 17px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  position: absolute;
+  right: 155px;
+  top: 209px
+}
+.ingredientText{
+  height: 300px;
+  width: 200px;
+  font-size: 8px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  position: relative;
+}
+.recipeCard {
+  height: 396px;
+  width: 560px;
+  background-image: url("http://2.bp.blogspot.com/-VBTjwM2gLCU/TaSwRj5B_tI/AAAAAAAAAtY/DR8Z7iyCU3c/s1600/recipe+card+6.jpg");
+  background-size:560px 400px;
+}
 .myRecipeFridgeContainer {
   height: 450px;
   width: 250px;

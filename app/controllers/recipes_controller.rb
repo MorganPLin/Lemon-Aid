@@ -3,14 +3,13 @@ class RecipesController < ApplicationController
       @users = User.all
       @recipes = Recipe.all
       @user = User.find(params[:id])
-      @recipe = Recipe.find(params[:id])
   end
 
   def show #myrecipes
       @users = User.all
       @recipes = Recipe.all
       @user = User.find(params[:id])
-      @recipe = Recipe.find(params[:id])
+      @recipe = Recipe.find(params[:recipe_id])
   end
 
   def edit
@@ -47,8 +46,7 @@ class RecipesController < ApplicationController
 
   def destroy
       @recipe = Recipe.find(params[:id])
-      @recipe.destroy
-      redirect_to root_path
+      redirect_to my_recipes_path
   end
 
   private #DEFINE RECIPE PARAMS

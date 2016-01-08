@@ -8,13 +8,17 @@ Rails.application.routes.draw do
 
   get 'users/:id/recipes/index' => "users#comment", as: :all_recipes
 
+  get 'users/:id/recipes/:recipe_id' => "users#show", as: :recipe
+
   get 'users/:id/ingredients/index' => "ingredients#index", as: :all_ingredients
 
   get 'users/:id/addIngredient/:ingredient_id' => "users#add_ingredient", as: :add_ingredient
 
   get 'users/:id/myrecipes' => "recipes#index", as: :my_recipes
 
-  get 'users/:id/myrecipes/:id' => "recipes#show", as: :my_recipe
+  get 'users/:id/myrecipes/:recipe_id' => "recipes#show", as: :my_recipe
+
+  delete "users/:id/myrecipes" => "recipes#destroy"
 
   # get 'users/:id/recipes/:id'
 
@@ -42,7 +46,7 @@ Rails.application.routes.draw do
 
   post '/' => 'users#create'
 
-  get 'users/:id' => 'users#show', as: :user
+  get 'users/:id' => 'users#comment', as: :user
 
   get 'sessions/new' => 'sessions#new', as: :new_session
 
