@@ -1,7 +1,44 @@
 // Place all the styles related to the ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.ingredientContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left:19px;
+  border-radius: 15px;
+}
+.addIngredientToFridge {
+  color: black;
+  background-color: palegoldenrod;
+  height: 31px;
+  width: 120px;
+  border-radius: 3px;
+  font-family: 'Coming Soon', cursive;
+}
 
+.ingredientBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+  margin: 20px;
+}
+.ingredientShow {
+  height: 214px;
+  width: 147px;
+  margin: 25px;
+  text-align: -webkit-center;
+}
 
 .ingredients {
   width: 500px;

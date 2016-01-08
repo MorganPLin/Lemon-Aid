@@ -32,6 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 
 gem 'kaminari'
+gem "will_paginate", "~> 3.0.4"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -23,10 +23,10 @@
 <div class= "searchBar">
 <!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
   <%= form_tag(all_ingredients_path, method: :get) do %>
-    SEARCH INGREDIENTS by
+    SEARCH BY:
     <%= select_tag "search", options_for_select(["name", "category"]) %>
     <%= text_field_tag :query %>
-    <%= submit_tag "Search Ingredients", "class" => "btn btn-primary"%>
+    <%= submit_tag "Search Ingredients", "class" => "searchButton"%>
   <% end %>
 
   <% if @paginate %>
@@ -34,18 +34,20 @@
   <% end %>
 </div>
 <!-- SHOW INGREDIENTS -->
-<div class= "ingredients">
-<% @ingredients.each do |ingredient| %>
 
-  <div class = "ingredientBox">
-    <span class = "ingredientTitle"><%= ingredient.name.upcase %></span></br>
-    <%= image_tag ingredient.ingredient_image_url, :class => "ingredientImage" %></br>
-    LASTS FOR: <%= ingredient.expiration %> days </br>
-    Tag Name<%= ingredient.expiration %> </br>
-    <%= ingredient.category.name %>
-    <button class="addIngredientToFridge"><%= link_to "ADD TO FRIDGE", add_ingredient_path(@user.id, ingredient.id), method: :get %> </button>
+<div class = "ingredientContainer">
+<% @ingredients.each do |ingredient| %>
+  <div class= "recipeBox">
+    <div class = "ingredientShow">
+      <%= ingredient.name.upcase %></br>
+      <%= image_tag ingredient.ingredient_image_url, :class => "recipeImage" %></br>
+      <span class = "myRecipeQuickInfoName">EXPIRES IN: <%= ingredient.expiration %> days</span></br>
+      <span class = "myRecipeQuickInfo">TAG NAME: #<%= ingredient.category.name %></span>
+      <button class="addIngredientToFridge"><%= link_to "ADD TO FRIDGE", add_ingredient_path(@user.id, ingredient.id), method: :get %> </button>
+    </div>
   </div>
 <% end %>
 </div>
+
 
 

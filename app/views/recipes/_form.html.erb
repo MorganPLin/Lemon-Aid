@@ -1,71 +1,69 @@
 
-<%= form_for @recipe do |f| %>
+<%= form_for @recipe, :html => {:class => "formSize"} do |f| %>
 
-  <div>
-    <%= f.text_field :name %>
+  <div class = "formField">
     <%= f.label :name %>
+    <%= f.text_field :name, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :image_url %>
+  <div class = "formField">
     <%= f.label :image_url %>
+    <%= f.text_field :image_url, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :cook_time %>
+  <div class = "formField">
     <%= f.label :cook_time %>
+    <%= f.text_field :cook_time, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :prep_time %>
+  <div class = "formField">
     <%= f.label :prep_time %>
+    <%= f.text_field :prep_time, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :total_time %>
+  <div class = "formField">
     <%= f.label :total_time %>
+    <%= f.text_field :total_time, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :calories_per_serving %>
+  <div class = "formField">
     <%= f.label :calories_per_serving %>
+    <%= f.text_field :calories_per_serving, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :list_ingredients %>
+  <div class = "formField">
     <%= f.label :list_ingredients %>
+    <%= f.text_field :list_ingredients, :class => "formInput" %>
   </div>
 <!-- x.gsub(/[1234567890/,]/,"") convert ingredient-->
-  <div>
-    <%= f.text_field :instructions %>
+  <div class = "formField">
     <%= f.label :instructions %>
+    <%= f.text_field :instructions, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :gluten_free %>
+  <div class = "formField">
     <%= f.label "Gluten-free" %>
+    <%= f.text_field :gluten_free, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :paleo %>
+  <div class = "formField">
     <%= f.label :paleo %>
+    <%= f.text_field :paleo, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :vegetarian %>
+  <div class = "formField">
     <%= f.label :vegetarian %>
+    <%= f.text_field :vegetarian, :class => "formInput" %>
   </div>
 
-  <div>
-    <%= f.text_field :vegan %>
+  <div class = "formField">
     <%= f.label :vegan %>
+    <%= f.text_field :vegan, :class => "formInput" %>
   </div>
-
-  <div>
 
   <%= f.hidden_field :user_id, value: @user.id %>
-  <%= f.submit "ADD A NEW RECIPE", :class => "btn-success" %>
+  <%= f.submit "Add to My Recipes", :class => "addNewRecipeB" %>
 
 <% end %>
 
-<%= link_to "Back to My Recipes", my_recipes_path, :class => "btn-info", :method => :get %>
+<button class = "addNewRecipeB"><%= link_to "BACK TO RECIPES", my_recipes_path, :method => :get %></button>

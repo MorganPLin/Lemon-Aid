@@ -1,6 +1,43 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.myRecipeFridgeContainer {
+  height: 450px;
+  width: 250px;
+  font-size: 10px;
+  float: left;
+  background-image: url("/assets/red_refrigerator_closed.jpg");
+  background-size: 248px 449px;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 50px;
+}
+.noteBox {
+  height: 300px;
+  width: 220px;
+  margin: 90px 0px 0px 20px;
+  background-image: url("/assets/fridge_paper.png");
+  background-size: 220px 300px;
+  background-repeat: none;
+  margin: 125px 0px 0px 20px;
+  position: absolute;
+}
+
+.recipeFridgeNote {
+  padding: 0px;
+  margin: 0px
+}
+
+.writtenRecipes {
+  width: 190px;
+  font-family: 'Cedarville Cursive', cursive;
+  color: black;
+  font-size: 16px;
+  margin-top: 63px;
+  margin: 50px;
+}
 
 .searchBar {
   width: 550px;
@@ -9,9 +46,100 @@
   left: 338px;
   top: 24px;
 }
+.myRecipeContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left:19px;
+  padding-top: 12px;
+  border-radius: 15px;
+}
+.myRecipeQuickInfo {
+  font-size: 10px;
+  color: limegreen;
+  width: 200px;
+}
+.myRecipeQuickInfoName {
+  font-size: 10px;
+  color: white;
+  width: 200px;
+}
+
+.myRecipeBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+  margin: 20px;
+}
+
 .myRecipesImage {
   max-height: 200px;
   width: 200px;
   border-radius: 4px;
   margin: 0 auto;
+}
+.formField {
+  font-family: 'Coming Soon', cursive;
+  display: block;
+  overflow:hidden;
+}
+.formSize {
+  width: 380px;
+  overflow: hidden;
+}
+
+.formInput {
+  width: 100%;
+}
+.addNewRecipe {
+  width: 150px;
+  height: 46px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 17px;
+  margin: 36px;
+  margin-left: 52px;
+}
+
+.addNewRecipeB {
+  width: 187px;
+  height: 46px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 10px;
+  margin: 36px;
+}
+
+h4 {
+  color: maroon;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  height: 40px;
+  padding: -10px;
+}
+
+.formContainer {
+  width: 400px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left:19px;
+  padding-top:10px;
+
 }

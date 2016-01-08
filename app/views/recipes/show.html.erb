@@ -1,9 +1,41 @@
+<!-- SHOW ALL MY RECIPES PAGE -->
 <%= render :partial => "partials/navigation_logged_in" %>
 <!-- ADD NEW RECIPE TO MY RECIPES -->
-<button class="addNewRecipe"><%= link_to "ADD NEW RECIPE", new_recipe_path(@user.id), method: :get %> </button>
-<div id = "recipeContainer">
-<% @user.recipes.each do |recipe| %>
-<%= recipe.name %></br>
-<%= image_tag recipe.image_url, :class => "myRecipesImage" %></br>
-<% end %>
+<h4>RECIPES</h4>
+
+
+<div class = "myRecipeFridgeContainer">
+
+  <div class="fridgeClosed">
+    <div class = "noteBox">
+    <div class = "writtenRecipes">
+      <% @user.recipes.each do |recipe| %>
+        <div class = "recipeFridgeNote">
+          •  <%= recipe.name %></br>
+        </div>
+      <% end %>
+    </div>
+
+    </div>
+  <button class="addNewRecipe"><%= link_to "+ ADD NEW RECIPE", new_recipe_path(@user.id), method: :get %> </button>
+  </div>
+</div>
+
+<div class = "myRecipeContainer">
+  <div class = "recipeCard">
+      <%= image_tag @recipe.image_url, :class => "recipeCardPicture" %>
+    <div class = "recipeCardText">
+      <%= @recipe.name.upcase %>
+      COOK TIME:<%= @recipe.total_time %>
+      CALORIES PER SERVING: <%= @recipe.calories_per_serving %>
+      INGREDIENTS:</br>
+      <%= @recipe.list_ingredients %>
+      INSTRUCTIONS: </br>
+      <%= @recipe.instructions %>
+<!--       <div class = "icon"></div> -->
+
+    </div>
+  </div>
+</div>
+
 </div>

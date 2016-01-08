@@ -45,8 +45,9 @@ class UsersController < ApplicationController
         if recipe.ingredients.length == count
           @recipes << recipe
         end
+
       end
-      return @recipes
+        return @recipes
   end
 
 
@@ -74,14 +75,17 @@ class UsersController < ApplicationController
          end
       end
         return @recipes
+
     end
 
-    @paginate = true
-    @recipes = Recipe.page(params[:page]).per(4)
 
     if params[:commit] == "WHAT'S FOR DINNER?"
-      @recipes = fridgeSearch
+    @recipes = fridgeSearch
     end
+    # @paginate = true
+    # @recipes = Recipe.page(params[:page]).per(4)
+
+
   end
 
   def add_ingredient

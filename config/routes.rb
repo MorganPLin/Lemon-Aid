@@ -12,7 +12,11 @@ Rails.application.routes.draw do
 
   get 'users/:id/addIngredient/:ingredient_id' => "users#add_ingredient", as: :add_ingredient
 
-  get 'users/:id/myrecipes' => "recipes#show", as: :my_recipes
+  get 'users/:id/myrecipes' => "recipes#index", as: :my_recipes
+
+  get 'users/:id/myrecipes/:id' => "recipes#show", as: :my_recipe
+
+  # get 'users/:id/recipes/:id'
 
   post 'recipes/create', as: :recipes
 

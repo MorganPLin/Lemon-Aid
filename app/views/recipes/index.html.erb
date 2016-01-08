@@ -1,0 +1,49 @@
+ <!-- SHOW ALL MY RECIPES PAGE -->
+<%= render :partial => "partials/navigation_logged_in" %>
+<!-- ADD NEW RECIPE TO MY RECIPES -->
+<h4>RECIPES</h4>
+
+
+<div class = "myRecipeFridgeContainer">
+
+  <div class="fridgeClosed">
+    <div class = "noteBox">
+    <div class = "writtenRecipes">
+      <% @user.recipes.each do |recipe| %>
+        <div class = "recipeFridgeNote">
+          •  <%= recipe.name %></br>
+        </div>
+      <% end %>
+    </div>
+
+    </div>
+  <button class="addNewRecipe"><%= link_to "+ ADD NEW RECIPE", new_recipe_path(@user.id), method: :get %> </button>
+  </div>
+</div>
+
+<div class = "myRecipeContainer">
+<% @user.recipes.each do |recipe| %>
+  <div class= "recipeBox">
+    <div class = "recipeShow">
+      <%= link_to recipe.name.upcase, my_recipe_path(@user.id), method: :get %>
+      <%= image_tag recipe.image_url, :class => "recipeImage" %></br>
+      <span class = "myRecipeQuickInfo">COOKED IN: </span>
+        <%= recipe.total_time %> </br>
+      <span class = "myRecipeQuickInfo">CALORIES: </span>
+        <%= recipe.calories_per_serving %> </br>
+      <div class = "firstComment">
+      <% if recipe.paleo === "true"%>
+        PALEO
+      <% elsif recipe.gluten_free === "true"%>
+         GLUTEN-FREE </br>
+      <% elsif recipe.vegetarian === "true"%>
+         VEGETARIAN </br>
+      <div id = "recipeLink">  <%= link_to "REVIEW ME" %> </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
+
+</div>

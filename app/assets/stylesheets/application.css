@@ -16,6 +16,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#tack {
+  height: 20px;
+  width: 20px;
+}
+
 #whatsForDinner {
   position:absolute;
 /*  background-color: #ff5050;*/
@@ -33,12 +38,21 @@
 }
 
 .searchBar {
-  width: 429px;
+  width: 600px;
   height: 40px;
   position: relative;
   left: 474px;
   top: 66px;
   font-family: 'Coming Soon', cursive;
+}
+.searchButton {
+  width: 103px;
+  height: 27px;
+  border-radius: 6px;
+  background-color: #3399ff;
+  color: white;
+  font-family: 'Coming Soon', cursive;
+  font-size: 10px;
 }
 
 .editFridgeContainer {
@@ -63,7 +77,6 @@ body {
 .fridge {
   height: 450px;
   width: 250px;
-  border: 1px solid red;
   font-size: 10px;
   float: left;
   background-image: url("/assets/red_refrigerator_empty.jpg");
@@ -74,6 +87,7 @@ body {
   position: relative;
   margin-left: 30px;
 }
+
 
 /*  background-repeat:no-repeat;
   -webkit-background-size:cover;
@@ -94,11 +108,13 @@ body {
   background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
   background-size: 600px 500px;
   margin-left: 413px;
-  padding-left:16px;
+  padding-left:19px;
+  border-radius: 15px;
+
 }
 
 .recipeImage {
-  max-height: 100px;
+  height: 90px;
   width: 100px;
   border-radius: 3px;
 }
@@ -128,7 +144,7 @@ body {
   font-size: 10px;
   height: 30px;
   width: 100px;
-  border: 1px solid black;
+
   margin-top: 25px;
 }
 

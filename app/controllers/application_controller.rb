@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   helper_method :current_user
-
+  require 'will_paginate/array'
 protected
   #this is where we create a method that returns a logged in user.
   #This method will at first attempt to return the current user,

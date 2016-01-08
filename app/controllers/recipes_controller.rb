@@ -3,10 +3,10 @@ class RecipesController < ApplicationController
       @users = User.all
       @recipes = Recipe.all
       @user = User.find(params[:id])
-
+      @recipe = Recipe.find(params[:id])
   end
 
-  def show
+  def show #myrecipes
       @users = User.all
       @recipes = Recipe.all
       @user = User.find(params[:id])

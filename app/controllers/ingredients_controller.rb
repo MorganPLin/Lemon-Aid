@@ -19,7 +19,7 @@ class IngredientsController < ApplicationController
         return @ingredients
     end
     @paginate = true
-    @ingredients = Ingredient.page(params[:page]).per(5)
+    @ingredients = Ingredient.page(params[:page]).per(6)
   end
 
   def show

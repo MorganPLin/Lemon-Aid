@@ -30,24 +30,27 @@
     SEARCH BY:
     <%= select_tag "search", options_for_select(["name", "ingredients", "gluten-free", "paleo", "vegetarian", "vegan"]) %>
     <%= text_field_tag :query %>
-    <%= submit_tag "Search Recipes", "class" => "btn btn-primary"%>
+    <%= submit_tag "Search Recipes", "class" => "searchButton"%>
   <% end %>
   <% if @paginate %>
     <%= paginate @recipes %>
   <% end %>
 </div>
-
+<!-- SHOW ALL RECIPES -->
 <div class = "recipeContainer">
 <% @recipes.each do |recipe| %>
   <div class= "recipeBox">
     <div class = "recipeShow">
       <%= recipe.name.upcase %>
       <%= image_tag recipe.image_url, :class => "recipeImage" %></br>
-      <span class = "recipeCreator">CREATED BY: <%= recipe.user.handle %></span></br>
-        <%= recipe.cook_time %> </br>
+      <span class = "myRecipeQuickInfoName">BY: <%= recipe.user.handle %></span></br>
+      <span class = "myRecipeQuickInfo">COOKED IN: </span>
+        <%= recipe.total_time %> </br>
+      <span class = "myRecipeQuickInfo">CALORIES: </span>
+        <%= recipe.calories_per_serving %> </br>
       <div class = "firstComment">
       <% if recipe.comments.last %>
-         "<%= recipe.comments.last.comment_text %>!"
+      USER SAYS: "<%= recipe.comments.last.comment_text %>!"
       <% elsif !recipe.comments.last %>
          no Reviews yet </br>
       <div id = "recipeLink">  <%= link_to "REVIEW ME" %> </div>
@@ -56,4 +59,5 @@
     </div>
   </div>
 <% end %>
+</div>
 </div>

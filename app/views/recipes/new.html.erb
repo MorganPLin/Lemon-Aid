@@ -2,6 +2,26 @@
 
 <%=yield %>
 
-<h1>NEW RECIPE FORM</h1>
+<h4>NEW RECIPE FORM</h4>
 
+<div class = "myRecipeFridgeContainer">
+
+  <div class="fridgeClosed">
+    <div class = "noteBox">
+    <div class = "writtenRecipes">
+      <% @user.recipes.each do |recipe| %>
+        <div class = "recipeFridgeNote">
+          •  <%= recipe.name %></br>
+        </div>
+      <% end %>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class = "formContainer">
 <%= render "form" %>
+</div>
+
