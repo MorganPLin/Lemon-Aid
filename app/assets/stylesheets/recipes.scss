@@ -1,6 +1,15 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.searchBar {
+  width: 550px;
+  height: 40px;
+  border: 1px solid red;
+  position: relative;
+  left: 338px;
+  top: 24px;
+}
 .myRecipesImage {
   max-height: 200px;
   width: 200px;

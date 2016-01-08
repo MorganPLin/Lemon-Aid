@@ -1,0 +1,71 @@
+
+<%= form_for @recipe do |f| %>
+
+  <div>
+    <%= f.text_field :name %>
+    <%= f.label :name %>
+  </div>
+
+  <div>
+    <%= f.text_field :image_url %>
+    <%= f.label :image_url %>
+  </div>
+
+  <div>
+    <%= f.text_field :cook_time %>
+    <%= f.label :cook_time %>
+  </div>
+
+  <div>
+    <%= f.text_field :prep_time %>
+    <%= f.label :prep_time %>
+  </div>
+
+  <div>
+    <%= f.text_field :total_time %>
+    <%= f.label :total_time %>
+  </div>
+
+  <div>
+    <%= f.text_field :calories_per_serving %>
+    <%= f.label :calories_per_serving %>
+  </div>
+
+  <div>
+    <%= f.text_field :list_ingredients %>
+    <%= f.label :list_ingredients %>
+  </div>
+<!-- x.gsub(/[1234567890/,]/,"") convert ingredient-->
+  <div>
+    <%= f.text_field :instructions %>
+    <%= f.label :instructions %>
+  </div>
+
+  <div>
+    <%= f.text_field :gluten_free %>
+    <%= f.label "Gluten-free" %>
+  </div>
+
+  <div>
+    <%= f.text_field :paleo %>
+    <%= f.label :paleo %>
+  </div>
+
+  <div>
+    <%= f.text_field :vegetarian %>
+    <%= f.label :vegetarian %>
+  </div>
+
+  <div>
+    <%= f.text_field :vegan %>
+    <%= f.label :vegan %>
+  </div>
+
+  <div>
+
+  <%= f.hidden_field :user_id, value: @user.id %>
+  <%= f.submit "ADD A NEW RECIPE", :class => "btn-success" %>
+
+<% end %>
+
+<%= link_to "Back to My Recipes", my_recipes_path, :class => "btn-info", :method => :get %>

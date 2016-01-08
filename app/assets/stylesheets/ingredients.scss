@@ -1,21 +1,14 @@
 // Place all the styles related to the ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.searchBar {
-  width: 500px;
-  height: 40px;
-  border: 1px solid red;
-  position: relative;
-  left: 338px;
-  top: 24px;
-}
+
 .ingredients {
   width: 500px;
   height: 200px;
   border: 2px solid grey;
   position: relative;
-  left: 338px;
-  top: 24px;
+  left: 400px;
+  top: 100px;
   display: flex;
 }
 
@@ -35,4 +28,5 @@
   height: 195px;
   border: 1px solid black;
   flex: wrap;
+  position: relative;
 }

@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20160106034423) do
 
   create_table "recipes", force: :cascade do |t|
     t.string   "name"
-    t.string   "image_url"
+    t.string   "image_url",                                    default: "http://i.huffpost.com/gen/1101485/images/o-CLEAN-PLATE-facebook.jpg"
     t.integer  "user_id"
     t.integer  "category_id"
     t.string   "cook_time"
@@ -89,8 +89,8 @@ ActiveRecord::Schema.define(version: 20160106034423) do
     t.boolean  "vegetarian",                                   default: false
     t.boolean  "vegan",                                        default: false
     t.integer  "saved_by"
-    t.datetime "created_at",                                                   null: false
-    t.datetime "updated_at",                                                   null: false
+    t.datetime "created_at",                                                                                                                   null: false
+    t.datetime "updated_at",                                                                                                                   null: false
   end
 
   create_table "recipes_users", id: false, force: :cascade do |t|
@@ -106,9 +106,9 @@ ActiveRecord::Schema.define(version: 20160106034423) do
     t.string   "password_digest"
     t.integer  "recipe_id"
     t.integer  "ingredient_id"
-    t.string   "my_fridge"
+    t.string   "my_fridge",         default: "My Fridge"
     t.string   "profile_image_url", default: "http://chefmixer.com/Content/images/DefaultChefProfile.png"
-    t.boolean  "super_chef"
+    t.boolean  "super_chef",        default: false
     t.integer  "liked_recipes"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,4 +1,6 @@
 <%= render :partial => "partials/navigation_logged_in" %>
+<!-- ADD NEW RECIPE TO MY RECIPES -->
+<button class="addNewRecipe"><%= link_to "ADD NEW RECIPE", new_recipe_path(@user.id), method: :get %> </button>
 <div id = "recipeContainer">
 <% @user.recipes.each do |recipe| %>
 <%= recipe.name %></br>

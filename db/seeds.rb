@@ -250,7 +250,7 @@ ingredient = Ingredient.create ([ {name: "chicken", #1
                                   {name: "olives", #36
                                    ingredient_image_url: "http://www.gourmetsleuth.com/images/default-source/dictionary/spanish-olives.jpg?sfvrsn=6",
                                    expiration: 30,
-                                   category_id: 36},
+                                   category_id: 13},
 
                                   {name: "soy sauce", #37
                                    ingredient_image_url: "https://spoonacular.com/cdn/ingredients_100x100/soy-sauce.jpg",

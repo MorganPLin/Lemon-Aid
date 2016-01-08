@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "users/:id/recipes/new" => "recipes#new", as: :new_recipe #alias refers to the entire method ie new_recipe_path
+  post "users/:id/recipes/index" => "recipes#create"
+
+  get "users/:id/recipes/:id/edit" => "recipe#edit", as: :edit_recipe
+
+  patch "users/:id/recipes/:id" => "recipes#update" #patch is updating
+
   get 'users/:id/recipes/index' => "users#comment", as: :all_recipes
 
   get 'users/:id/ingredients/index' => "ingredients#index", as: :all_ingredients
@@ -7,8 +14,9 @@ Rails.application.routes.draw do
 
   get 'users/:id/myrecipes' => "recipes#show", as: :my_recipes
 
+  post 'recipes/create', as: :recipes
 
-  get 'recipes/show'
+  # get 'recipes/:id'
 
   get 'recipes/edit'
 

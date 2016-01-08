@@ -23,7 +23,7 @@
 <div class= "searchBar">
 <!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
   <%= form_tag(all_ingredients_path, method: :get) do %>
-    Search ingredient by
+    SEARCH INGREDIENTS by
     <%= select_tag "search", options_for_select(["name", "category"]) %>
     <%= text_field_tag :query %>
     <%= submit_tag "Search Ingredients", "class" => "btn btn-primary"%>
@@ -32,6 +32,7 @@
   <% if @paginate %>
     <%= paginate @ingredients %>
   <% end %>
+</div>
 <!-- SHOW INGREDIENTS -->
 <div class= "ingredients">
 <% @ingredients.each do |ingredient| %>

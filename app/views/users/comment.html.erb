@@ -1,4 +1,42 @@
+
+
 <%= render :partial => "partials/navigation_logged_in" %>
+
+<%= form_tag all_recipes_path, method: "get" do %>
+  <%= submit_tag "WHAT'S FOR DINNER?" %>
+<% end %>
+
+<!-- FRIDGE -->
+<div class = "editFridgeContainer">
+<h3><%= @user.my_fridge.upcase%></h3>
+  <div class="fridge">
+
+      <% @user.ingredients.each do |ingredient| %>
+      <div class = "fridgeIngredients">
+        <%= image_tag ingredient.ingredient_image_url, :class=>
+        "fridgeIngredientImage" %></br>
+        <div class = "ingredientLabel">
+          <%= ingredient.name %></br>
+        </div>
+      </div>
+
+      <% end %>
+  </div>
+</div>
+
+<div class= "searchBar">
+<!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
+  <%= form_tag(all_recipes_path, method: :get) do %>
+    SEARCH RECIPES by
+    <%= select_tag "search", options_for_select(["name", "ingredients", "gluten-free", "paleo", "vegetarian", "vegan"]) %>
+    <%= text_field_tag :query %>
+    <%= submit_tag "Search Recipes", "class" => "btn btn-primary"%>
+  <% end %>
+  <% if @paginate %>
+    <%= paginate @recipes %>
+  <% end %>
+</div>
+
 <div class = "recipeContainer">
 <% @recipes.each do |recipe| %>
   <div class= "recipeBox">
