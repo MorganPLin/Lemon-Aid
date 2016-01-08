@@ -7,25 +7,9 @@
   </header>
 
 <ul>
-  <li><%= link_to "ALL RECIPES", all_recipes_path, :method => :get, :class => "navBar"%></li>
-  <li><%= link_to "INGREDIENTS INDEX", all_ingredients_path, :method => :get, :class => "navBar" %></li>
-  <li><%= link_to "MY RECIPES", my_recipes_path, :method => :get, :class => "navBar" %>
+  <li><%= link_to "SIGN UP", new_user_path, :method => :get, :class => "navBar" %>
   </li>
-  <li><%= link_to "LOG OUT", destroy_session_path, :class => "navBar" %></li>
-  <li><%= image_tag @user.profile_image_url, :id => "profilePic" %></li>
-  <h2>Welcome <%= @user.first_name %>!</h2>
+  <li><%= link_to "LOG IN", new_session_path, :class => "navBar" %></li>
 </ul>
 
-<h3>MY FRIDGE</h3>
-  <div class="fridge">
-
-      <% @user.ingredients.each do |ingredient| %>
-
-        <%= image_tag ingredient.ingredient_image_url, :class=>
-        "fridgeIngredients" %>
-        <div class = "ingredientLabel">
-          <%= ingredient.name %>
-        </div>
-
-      <% end %>
-  </div>
+</html>

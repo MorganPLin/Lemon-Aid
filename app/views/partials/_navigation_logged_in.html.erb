@@ -7,8 +7,9 @@
   </header>
 
 <ul>
+  <li id="logoLabel">LEMON-AID</li>
   <li><%= link_to "MY FRIDGE", all_ingredients_path, :method => :get, :class => "navBar" %></li>
-  <li><%= link_to "SEARCH RECIPES", all_recipes_path, :method => :get, :class => "navBar"%></li>
+  <li><%= link_to "RECIPE SEARCH", all_recipes_path, :method => :get, :class => "navBar"%></li>
   <li><%= link_to "MY RECIPES", my_recipes_path, :method => :get, :class => "navBar" %>
   </li>
   <li><%= link_to "LOG OUT", destroy_session_path, :class => "navBar" %></li>

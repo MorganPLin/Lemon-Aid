@@ -3,7 +3,7 @@
 <%= render :partial => "partials/navigation_logged_in" %>
 
 <%= form_tag all_recipes_path, method: "get" do %>
-  <%= submit_tag "WHAT'S FOR DINNER?" %>
+  <%= submit_tag "WHAT'S FOR DINNER?", :id => "whatsForDinner" %>
 <% end %>
 
 <!-- FRIDGE -->
@@ -27,7 +27,7 @@
 <div class= "searchBar">
 <!-- SEARCH BAR BY NAME, ADD TO FRIDGE -->
   <%= form_tag(all_recipes_path, method: :get) do %>
-    SEARCH RECIPES by
+    SEARCH BY:
     <%= select_tag "search", options_for_select(["name", "ingredients", "gluten-free", "paleo", "vegetarian", "vegan"]) %>
     <%= text_field_tag :query %>
     <%= submit_tag "Search Recipes", "class" => "btn btn-primary"%>

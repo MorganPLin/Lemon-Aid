@@ -13,28 +13,34 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-#fridgeSearch {
+#whatsForDinner {
   position:absolute;
+/*  background-color: #ff5050;*/
   background-color: orange;
   height: 50px;
   height: 50px;
   width: 132px;
   color: white;
-  top: 80px;
-  left: 400px;
+  top: 600px;
+  left: 150px;
   border-radius: 24px;
   box-shadow: 3px;
   text-shadow: none;
+  font-family: 'Coming Soon', cursive;
 }
+
 .searchBar {
-  width: 500px;
+  width: 429px;
   height: 40px;
-  border: 1px solid red;
   position: relative;
-  left: 400px;
+  left: 474px;
   top: 66px;
+  font-family: 'Coming Soon', cursive;
 }
+
 .editFridgeContainer {
   height: 500px;
   width: 300px;
@@ -67,7 +73,6 @@ body {
   flex-wrap: wrap;
   position: relative;
   margin-left: 30px;
-
 }
 
 /*  background-repeat:no-repeat;
@@ -88,7 +93,8 @@ body {
   padding-top: 65px;
   background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
   background-size: 600px 500px;
-  margin-left: 435px;
+  margin-left: 413px;
+  padding-left:16px;
 }
 
 .recipeImage {
@@ -156,6 +162,7 @@ body {
   color: black;
   background-color: yellow;
   margin-top: -15px;
+  font-family: 'Coming Soon', cursive;
 }
 
 #profilePic {
@@ -166,6 +173,7 @@ body {
     border: 1px solid black;
     background-color: white;
 }
+
 
 
 

@@ -36,7 +36,7 @@ class UsersController < ApplicationController
       @recipes = []
       recipe_list = Recipe.all
       recipe_list.each do |recipe|
-        count = 0
+      count = 0
         recipe.ingredients.each do |ingredient|
           if @user_ingredients.include? ingredient
             count += 1
@@ -63,15 +63,19 @@ class UsersController < ApplicationController
       search_by = params[:search].to_sym
       recipe_list = Recipe.all
       @recipes = []
+
       recipe_list.each do |recipe|
         if recipe.ingredients.name.downcase.include? params[:query].downcase
           @recipes << recipe
         elsif recipe.name.downcase.include? params[:query].downcase
           @recipes << recipe
-        end
+        elsif recipe.list_ingredients.gsub(/[1234567890,]/,"").split.include? params[:query].downcase
+            @recipes << recipe
+         end
       end
         return @recipes
     end
+
     @paginate = true
     @recipes = Recipe.page(params[:page]).per(4)
 
