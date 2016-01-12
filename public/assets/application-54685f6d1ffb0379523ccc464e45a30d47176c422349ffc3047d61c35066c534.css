@@ -1,0 +1,566 @@
+#navWelcomeLogo {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 94px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Poiret One', cursive;
+  height: 35px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+li {
+   display: inline;
+   padding-left: 20px;
+}
+
+h1, h3 {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+
+}
+
+h2, p {
+  font-family: 'Poiret One', cursive;
+  font-size: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+.navBar {
+  color: white;
+}
+
+a:hover {
+  color: pink;
+}
+/* line 4, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredientContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left: 19px;
+  border-radius: 15px;
+}
+
+/* line 17, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.addIngredientToFridge {
+  color: black;
+  background-color: palegoldenrod;
+  height: 31px;
+  width: 120px;
+  border-radius: 3px;
+  font-family: 'Coming Soon', cursive;
+}
+
+/* line 26, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredientBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+  margin: 20px;
+}
+
+/* line 36, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredientShow {
+  height: 214px;
+  width: 147px;
+  margin: 25px;
+  text-align: -webkit-center;
+}
+
+/* line 43, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredients {
+  width: 500px;
+  height: 200px;
+  border: 2px solid grey;
+  position: relative;
+  left: 400px;
+  top: 100px;
+  display: flex;
+}
+
+/* line 53, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredientImage {
+  height: 100px;
+  width: 100px;
+  font-size: 10px;
+  border-radius: 4px;
+  background-color: white;
+  border-color: black;
+  font-family: 'Poiret One', cursive;
+  margin: 0 auto;
+}
+
+/* line 64, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/ingredients.scss */
+.ingredientBox {
+  width: 170px;
+  height: 195px;
+  border: 1px solid black;
+  flex: wrap;
+  position: relative;
+  color: black;
+}
+/* line 5, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.recipeCardPicture {
+  margin: 20px;
+  border-radius: 10px;
+  height: 267px;
+  width: 267px;
+}
+
+/* line 11, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeCardContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 582px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 343px;
+  padding-left: 19px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  font-size: 6px;
+}
+
+/* line 30, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.recipeCardText {
+  height: 300px;
+  width: 200px;
+  font-size: 17px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  position: absolute;
+  right: 155px;
+  top: 209px;
+}
+
+/* line 40, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.ingredientText {
+  height: 300px;
+  width: 200px;
+  font-size: 8px;
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  position: relative;
+}
+
+/* line 48, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.recipeCard {
+  height: 396px;
+  width: 560px;
+  background-image: url("http://2.bp.blogspot.com/-VBTjwM2gLCU/TaSwRj5B_tI/AAAAAAAAAtY/DR8Z7iyCU3c/s1600/recipe+card+6.jpg");
+  background-size: 560px 400px;
+}
+
+/* line 54, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeFridgeContainer {
+  height: 450px;
+  width: 250px;
+  font-size: 10px;
+  float: left;
+  background-image: url("/assets/red_refrigerator_closed.jpg");
+  background-size: 248px 449px;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 50px;
+}
+
+/* line 67, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.noteBox {
+  height: 300px;
+  width: 220px;
+  margin: 90px 0px 0px 20px;
+  background-image: url("/assets/fridge_paper.png");
+  background-size: 220px 300px;
+  background-repeat: none;
+  margin: 125px 0px 0px 20px;
+  position: absolute;
+}
+
+/* line 78, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.recipeFridgeNote {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 83, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.writtenRecipes {
+  width: 190px;
+  font-family: 'Cedarville Cursive', cursive;
+  color: black;
+  font-size: 16px;
+  margin-top: 63px;
+  margin: 50px;
+}
+
+/* line 92, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.searchBar {
+  width: 550px;
+  height: 40px;
+  position: relative;
+  left: 338px;
+  top: 24px;
+}
+
+/* line 99, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left: 19px;
+  padding-top: 12px;
+  border-radius: 15px;
+}
+
+/* line 114, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeQuickInfo {
+  font-size: 10px;
+  color: limegreen;
+  width: 200px;
+}
+
+/* line 119, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeQuickInfoName {
+  font-size: 10px;
+  color: white;
+  width: 200px;
+}
+
+/* line 125, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipeBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+  margin: 20px;
+}
+
+/* line 136, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.myRecipesImage {
+  max-height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+/* line 142, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.formField {
+  font-family: 'Coming Soon', cursive;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 147, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.formSize {
+  width: 380px;
+  overflow: hidden;
+}
+
+/* line 152, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.formInput {
+  width: 100%;
+}
+
+/* line 155, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.addNewRecipe {
+  width: 150px;
+  height: 46px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 17px;
+  margin: 36px;
+  margin-left: 52px;
+}
+
+/* line 167, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.addNewRecipeB {
+  width: 187px;
+  height: 46px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 10px;
+  margin: 36px;
+}
+
+/* line 178, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+h4 {
+  color: maroon;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  height: 40px;
+  padding: -10px;
+}
+
+/* line 187, /Users/morganlin/code/lucky7s/workspace/w06/pie_app/app/assets/stylesheets/recipes.scss */
+.formContainer {
+  width: 400px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left: 19px;
+  padding-top: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+#welcomeLogo {
+  height: 177px;
+  position: absolute;
+  margin: auto;
+  padding: 130px 0px 0px 328px;
+}
+
+a {
+  color: grey;
+}
+
+.myProfile {
+  height: 100%;
+  width: 582px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 343px;
+  padding-left:19px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+h5 {
+  font-size: 40px;
+}
+#tack {
+  height: 20px;
+  width: 20px;
+}
+
+#whatsForDinner {
+  position:absolute;
+/*  background-color: #ff5050;*/
+  background-color: orange;
+  height: 50px;
+  height: 50px;
+  width: 132px;
+  color: white;
+  top: 600px;
+  left: 150px;
+  border-radius: 24px;
+  box-shadow: 3px;
+  text-shadow: none;
+  font-family: 'Coming Soon', cursive;
+}
+
+.searchBar {
+  width: 600px;
+  height: 40px;
+  position: relative;
+  left: 474px;
+  top: 66px;
+  font-family: 'Coming Soon', cursive;
+}
+.searchButton {
+  width: 103px;
+  height: 27px;
+  border-radius: 6px;
+  background-color: #3399ff;
+  color: white;
+  font-family: 'Coming Soon', cursive;
+  font-size: 10px;
+}
+
+.editFridgeContainer {
+  height: 500px;
+  width: 300px;
+  position:absolute;
+  left: 60px;
+  top: 60px;
+}
+
+h3 {
+  color: maroon;
+  text-align: center;
+  padding-top: 20px;
+}
+
+body {
+  background-color: #92DCE0;
+  color: white;
+  font-family: Verdana;
+}
+
+.fridge {
+  height: 450px;
+  width: 250px;
+  font-size: 10px;
+  float: left;
+  background-image: url("/assets/red_refrigerator_empty.jpg");
+  background-size: 248px 449px;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 30px;
+}
+
+
+/*  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+/*  display: -webkit-flex;*/
+/*  -webkit-flex-wrap: wrap;*/
+
+.recipeContainer {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 65px;
+  background-image: url("http://img08.deviantart.net/65ae/i/2012/184/5/9/cork_02_by_purpledragon42_stock-d55wkf5.jpg");
+  background-size: 600px 500px;
+  margin-left: 413px;
+  padding-left:19px;
+  border-radius: 15px;
+
+}
+
+.recipeImage {
+  height: 90px;
+  width: 100px;
+  border-radius: 3px;
+}
+
+.recipeBox {
+  height: 300px;
+  width: 200px;
+  font-family: 'Coming Soon', cursive;
+  font-color: black;
+  border: 1px solid black;
+  background-image: url("http://3.bp.blogspot.com/-_joYyrMvGpY/Trr0iJpytcI/AAAAAAAAA2M/n_HnGXgZnto/s1600/blank-polaroid-frame.jpg");
+  background-size: 200px 300px;
+  margin: 20px;
+}
+
+/*black portion of photo */
+.recipeShow {
+  height: 214px;
+  width: 147px;
+  margin: 25px 0px 0px 25px;
+  text-align: -webkit-center;
+}
+/*comment at bottom of Recipe on AllRecipes*/
+.firstComment {
+  color: red;
+  font-family: 'Coming Soon', cursive;
+  font-size: 10px;
+  height: 30px;
+  width: 100px;
+
+  margin-top: 25px;
+}
+
+.editFridgeContainer {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.fridgeIngredientImage {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  margin: 3px auto;
+}
+
+.fridgeIngredients {
+  height: 61px;
+  width: 62px;
+  margin: 24px 0px 0px 7px;
+  padding-left: 9px;
+}
+
+.ingredientLabel {
+  clear: both;
+  border: 2px solid grey;
+  border-radius: 2px;
+  text-align: center;
+  color: black;
+  background-color: yellow;
+  margin-top: -15px;
+  font-family: 'Coming Soon', cursive;
+}
+
+#profilePic {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px 50px;
+    max-height: 50px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+
+
