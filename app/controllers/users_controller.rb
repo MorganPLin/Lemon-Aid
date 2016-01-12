@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     @recipe = Recipe.find(params[:recipe_id])
   end
 
-  def fridgeSearch#buttonclicked
+  def fridgeSearch#buttonclicked #whatsforDinner
     @users = User.all
     @recipes = Recipe.all
     @user = User.find(params[:id])
@@ -72,8 +72,6 @@ class UsersController < ApplicationController
           @recipes << recipe
         elsif recipe.name.downcase.include? params[:query].downcase
           @recipes << recipe
-        elsif recipe.list_ingredients.gsub(/[1234567890,]/,"").split.include? params[:query].downcase
-            @recipes << recipe
          end
       end
         return @recipes
