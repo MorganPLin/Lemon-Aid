@@ -28,6 +28,11 @@ Welcome to Lemon-Aid, your fridge therapy haven! Make sure you never leave the "
 ==WIRE-FRAMING
 Wire-framing was crucial to the development of this app as users had to be able to clearly identify the purpose of the app. The aesthetic was meant to be clean, "kitchen-friendly" and organized.
 
+.. image:: /assets/wire_frame_1.jpg
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+
 ![alt tag](/assets/wire_frame_1.jpg)
 ![alt tag](/assets/wire_frame_2.jpg)
 
