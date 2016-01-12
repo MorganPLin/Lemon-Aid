@@ -1,36 +1,33 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+==HEROKUAPP
+    HEROKUAPP LINK: https://lemon-aid.herokuapp.com/
 
-Things you may want to cover:
+==LEMON-AID APP
 
-* Ruby version
+When your fridge gives you lemons...
+make Lemon-Aid!
 
-* System dependencies
+Welcome to Lemon-Aid, your fridge therapy haven! Make sure you never leave the "lemons" in your fridge to waste by making use of every last bit! Here are few things you can do here.
 
-* Configuration
+* Share your creations and search recipes by what's in your fridge.
+* Update your Fridge with ingredients.
+* View a database of recipes.
 
-* Database creation
+==TRELLO
+  TRELLO LINK: https://trello.com/b/yulPSehz/lemon-aid-app
+  PROCESS
+  In building this app, one of the major difficulties I ran into was seeding data. It was difficult
+  to locate a good food API that would allow me to grab ingredients. As a result, I seeded the ingredients and recipes on my own. This decreased my window for building functionality.
 
-* Database initialization
+  ICE BOX
+  * Peel of fortune: random meal selector
+  * Delete Ingredients from Fridge via 'X' image
+  * Add Comment and Rating System for3 other Users
 
-* How to run the test suite
+==WIRE-FRAMING
+Wire-framing was crucial to the development of this app as users had to be able to clearly identify the purpose of the app. The aesthetic was meant to be clean, "kitchen-friendly" and organized.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-LEMON-AID APP
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-<h1>TRELLO</h1>
-    LINK: https://trello.com/b/yulPSehz/lemon-aid-app
-
-<h1>HEROKUAPP</h1>
-    LINK: https://lemon-aid.herokuapp.com/
-<img
+![alt tag](/assets/wire_frame_1.jpg)
+![alt tag](/assets/wire_frame_2.jpg)
 
