@@ -30,6 +30,6 @@ ICE BOX
 ==WIRE-FRAMING
 Wire-framing was crucial to the development of this app as users had to be able to clearly identify the purpose of the app. The aesthetic was meant to be clean, "kitchen-friendly" and organized.
 
-![alt tag](app/assets/images/wire_frame_1.jpg)
-![alt tag](app/assets/images/wire_frame_2.jpg)
+![image](/app/assets/images/wire_frame_1.jpg)
+![image](/app/assets/images/wire_frame_2.jpg)
 
