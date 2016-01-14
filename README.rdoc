@@ -1,7 +1,8 @@
 == README
 
 ==HEROKUAPP
-    HEROKUAPP LINK: https://lemon-aid.herokuapp.com/
+
+HEROKUAPP LINK: https://lemon-aid.herokuapp.com/
 
 ==LEMON-AID APP
 
@@ -15,24 +16,20 @@ Welcome to Lemon-Aid, your fridge therapy haven! Make sure you never leave the "
 * View a database of recipes.
 
 ==TRELLO
-  TRELLO LINK: https://trello.com/b/yulPSehz/lemon-aid-app
-  PROCESS
-  In building this app, one of the major difficulties I ran into was seeding data. It was difficult
-  to locate a good food API that would allow me to grab ingredients. As a result, I seeded the ingredients and recipes on my own. This decreased my window for building functionality.
+TRELLO LINK: https://trello.com/b/yulPSehz/lemon-aid-app
 
-  ICE BOX
-  * Peel of fortune: random meal selector
-  * Delete Ingredients from Fridge via 'X' image
-  * Add Comment and Rating System for3 other Users
+PROCESS
+In building this app, one of the major difficulties I ran into was seeding data. It was difficult
+to locate a good food API that would allow me to grab ingredients. As a result, I seeded the ingredients and recipes on my own. This decreased my window for building functionality.
+
+ICE BOX
+* Peel of fortune: random meal selector
+* Delete Ingredients from Fridge via 'X' image
+* Add Comment and Rating System for3 other Users
 
 ==WIRE-FRAMING
 Wire-framing was crucial to the development of this app as users had to be able to clearly identify the purpose of the app. The aesthetic was meant to be clean, "kitchen-friendly" and organized.
 
-.. image:: /assets/wire_frame_1.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-
-![alt tag](~/assets/wire_frame_1.jpg)
-![alt tag](~/assets/wire_frame_2.jpg)
+![alt tag](/app/assets/wire_frame_1.jpg)
+![alt tag](/app/assets/wire_frame_2.jpg)
 
