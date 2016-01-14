@@ -33,6 +33,6 @@ Wire-framing was crucial to the development of this app as users had to be able 
    :width: 200 px
    :scale: 50 %
 
-![alt tag](/assets/wire_frame_1.jpg)
-![alt tag](/assets/wire_frame_2.jpg)
+![alt tag](~/assets/wire_frame_1.jpg)
+![alt tag](~/assets/wire_frame_2.jpg)
 

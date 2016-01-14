@@ -59,7 +59,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user_ingredients = User.find(params[:id]).ingredients
 
-    #SEARCH INGREDIENTS BY FRIDGE if user ingrediens overlap with recipe ingredient
+    #SEARCH INGREDIENTS BY FRIDGE if user ingredients overlap with recipe ingredient
 
     # SEARCH BAR FOR RECIPES
     if params[:query]
