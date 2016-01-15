@@ -7,11 +7,15 @@
   </header>
 
 <ul>
-  <li><%= link_to "SIGN UP", new_user_path, :method => :get, :class => "navBar" %>
+  <li><%= link_to "SIGN UP", :class => "navBar", :id => "signUp" %>
   </li>
-  <li><%= link_to "LOG IN", new_session_path, :class => "navBar" %></li>
+  <li><%= link_to "LOG IN", :class => "navBar", :id => "logIn" %></li>
 </ul>
 <h6>
   When Your Fridge Gives You Lemons, Make...
 </h6>
+
+<%= render :partial => "log_in_modal" %>
+<%= render :partial => "sign_up_modal" %>
+
 </html>

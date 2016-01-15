@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   get 'users/:id/myrecipes/:recipe_id' => "recipes#show", as: :my_recipe
 
-  delete "users/:id/myrecipes" => "recipes#destroy"
+  delete "users/:id/myrecipes/:recipe_id" => "recipes#destroy"
 
   # get 'users/:id/recipes/:id'
 

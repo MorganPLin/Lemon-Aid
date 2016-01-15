@@ -1,0 +1,23 @@
+<div id ="loginModal">
+
+<h1> LOG-IN </h1>
+
+<div class = "xButton">X</div>
+
+   <%= form_for @user, url: create_sessions_path do |f| %>
+
+        <% flash.each do |key,value|  %>
+           <div class="<%= key %>" > <%= value %> </div>
+        <% end %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, :class => "inputModal" %><br>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, :class => "inputModal"  %><br>
+
+        <%= f.submit "Make Lemon-Aid!", :class => "modalButton" %>
+   <% end %>
+</div>
+
+

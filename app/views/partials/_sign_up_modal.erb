@@ -1,0 +1,36 @@
+<div class="main">
+  <div id ="signUpModal">
+
+  <h1>CREATE AN ACCOUNT </h1>
+
+  <div class = "xButton">X</div>
+
+      <%= form_for(@user) do |f| %>
+
+        <% flash.each do |key,value|  %>
+          <div class="<%= key %>" > <%= value %> </div>
+        <% end %>
+
+        <%= f.label :first_name, "First Name"%>
+        <%= f.text_field :first_name, :class => "inputModal" %><br>
+
+        <%= f.label :last_name, "Last Name" %>
+        <%= f.text_field :last_name, :class => "inputModal" %><br>
+
+        <%= f.label :email, "Email" %>
+        <%= f.email_field :email, :class => "inputModal" %><br>
+
+        <%= f.label :handle, "Username" %>
+        <%= f.text_field :handle, :class => "inputModal" %><br>
+
+        <%= f.label :password, "Password" %>
+        <%= f.password_field :password, :class => "inputModal" %><br>
+
+        <%= f.label :password_confirmation, "Password Confirmation" %>
+        <%= f.password_field :password_confirmation, :class => "inputModal" %><br>
+
+        <%= f.submit "Sign Me Up!", :class => "modalButton" %>
+      <% end %>
+  </div>
+</div>
+
