@@ -5,9 +5,9 @@ class UsersController < ApplicationController
         @user = User.new
   end
 
-  def new
-    @user = User.new
-  end
+  # def new
+  #   @user = User.new
+  # end
 
   def create
 
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
       @recipes = []
       recipe_list = Recipe.all
       recipe_list.each do |recipe|
-      count = 0
+        count = 0
         recipe.ingredients.each do |ingredient|
           if @user_ingredients.include? ingredient
             count += 1
@@ -73,11 +73,13 @@ class UsersController < ApplicationController
           @recipes << recipe
         elsif recipe.name.downcase.include? params[:query].downcase
           @recipes << recipe
-         end
+        elsif recipe.list_ingredients.gsub(/[1234567890,]/,"").split.include? params[:query].downcase
+          @recipes << recipe
+          end
       end
+    end
         return @recipes
 
-    end
 
 
     if params[:commit] == "WHAT'S FOR DINNER?"
@@ -85,9 +87,8 @@ class UsersController < ApplicationController
     end
     # @paginate = true
     # @recipes = Recipe.page(params[:page]).per(4)
-
-
   end
+
 
   def add_ingredient
     ingredient = Ingredient.find(params[:ingredient_id])
